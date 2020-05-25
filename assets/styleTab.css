@@ -1,0 +1,25 @@
+body{
+    background-color: gray;
+}
+
+#divIframeError{
+    overflow: hidden;
+    margin: 15px auto;
+    max-width: 390px;
+}
+
+#iFrameError{
+
+    border: 0px none;
+    margin-left: -210px;
+    height: 490px;
+    margin-top: 0px;
+    width: 800px;
+}
+
+#buttonReturnIfFailedSetTimeout{
+
+    margin: 0 auto;
+    display: block;
+    
+}

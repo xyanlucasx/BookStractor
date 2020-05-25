@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            width: 400px;
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="TextInstruction">Insira o ISBN(VirtualSource) ou ID(Pearson Bvirtual) do livro. Separe-os por virgula caso
+        seja mais de um.</h1>
+
+    <label for="library">Escolha o serviço</label>
+
+    <select id="library">
+        <option value="VirtualSource">VirtualSource</option>
+        <option value="PearsonBvirtual">Pearson Bvirtual</option>
+    </select>
+    <div>
+        <br>
+        <span>ISBN/ID</span>
+        <input type="text" name="isbnOrId" id="isbnOrId">
+    </div>
+
+    <div class="slidecontainer">
+        <br>
+        <div id="QualityNumberText">Qualidade do PDF: 0.5 </div>
+        <input type="range" min="0.1" max="0.9" step="0.1" value="0.5" class="slider" id="myRangeQuality">
+    </div>
+
+    <div>
+        <br>
+        <span>Digite as páginas ou intervalo de páginas que deseja imprimir.<br> Separe por virgula as páginas(13,16,19)
+            ou separe por hifen se for um intervalo de páginas(1-47). Deixe vazio para imprimir o livro inteiro</span>
+        <br>
+        <input type="text" name="intervalPages" id="intervalPages">
+    </div>
+    <br>
+    <button id="startButton"> Começar!</button>
+    <div>
+        <br><span id="error">aaa</span>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>

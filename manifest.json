@@ -1,0 +1,22 @@
+{
+    "name": "BookStractor",
+    "version": "1.0",
+    "description": "Baixar livros",
+    "manifest_version": 2,
+
+    "permissions":["activeTab", "storage", "http://*/*", "https://*/*", "tabs", "notifications"],
+    "background": {"page":"background.html"},
+    "browser_action": {
+   	 "default_title": "BookStractor",
+      "default_popup": "index.html"
+   },
+   "content_scripts": [{
+    "js": ["js/jquery-3.5.0.min.js","js/jspdf.min.js", "js/Content_Script.js"],
+    "matches": [ "https://cengagebrasil.vstbridge.com/*", "https://jigsaw.vitalsource.com/*", "https://cengagebrasil.vitalsource.com/*","https://plataforma.bvirtual.com.br/*"],
+    "run_at": "document_end"
+ }],
+ "web_accessible_resources": [
+   "assets/*.mp3","assets/*.css"
+]
+  }
+
